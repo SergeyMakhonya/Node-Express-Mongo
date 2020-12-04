@@ -1,0 +1,32 @@
+# Need extension "REST Client" for VS Code
+
+POST http://127.0.0.1:55505/ HTTP/1.1
+content-type: application/json
+
+{
+    "title": "123456"
+}
+
+###
+
+GET http://127.0.0.1:55505/ HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://127.0.0.1:55505/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": "5fcab8d6dc6820295cf6445c",
+    "title": "654321"
+}
+
+###
+
+DELETE http://127.0.0.1:55505/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": "5fcab8b0a0fe0331080e8527"
+}

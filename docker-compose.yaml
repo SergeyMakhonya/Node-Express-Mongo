@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  mongo:
+    image: 'mongo:latest'
+    restart: always
+    container_name: 'my-mongo-2020-12-05'
+    volumes:
+      - ./mongo_volume:/data/db
+    ports:
+      - 27017:27017
